@@ -19,29 +19,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
               elevation: 0, iconTheme: IconThemeData(color: Colors.black))),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: const Text(
-            'Pet Transit',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
-        body: Column(
-          children: [
-            const Center(
-              child: Text('Flutter Demo Home Page'),
-            ),
-            Builder(builder: (context) {
-              return ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, AuthScreen.routeName);
-                  },
-                  child: const Text(" Continue  "));
-            })
-          ],
-        ),
-      ),
+      home: AuthScreen(),
     );
   }
 }
