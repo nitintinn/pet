@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:pet/common/widgets/custom_textfield.dart";
 import "package:pet/constants/global_variables.dart";
 
 enum Auth {
@@ -73,7 +74,10 @@ class _AuthScreenState extends State<AuthScreen> {
                   color: GlobalVariables.backgroundColor,
                   child: Form(
                     key: _signUpFormKey,
-                    child: Column(),
+                    child: Column(children: [
+                      CustomTextField(controller:
+                      )
+                    ],),
                   ),
                 ),
               ListTile(
